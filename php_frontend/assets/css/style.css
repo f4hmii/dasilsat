@@ -278,6 +278,7 @@ body::after {
     font-size: 2.2rem;
     background: linear-gradient(135deg, var(--secondary-neon), var(--primary-neon));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 12px rgba(249, 115, 22, 0.6))
             drop-shadow(0 0 24px rgba(56, 189, 248, 0.3));
@@ -301,6 +302,7 @@ body::after {
 .app-header h1 span {
     background: linear-gradient(135deg, var(--secondary-neon) 0%, var(--primary-neon) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.4));
 }
@@ -833,6 +835,7 @@ body::after {
     font-weight: 800;
     background: linear-gradient(135deg, #ffffff 20%, #7dd3fc 60%, #fdba74 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -1px;
     filter: drop-shadow(0 0 12px rgba(56,189,248,0.2));
@@ -1206,6 +1209,7 @@ body::after {
     display: inline-block;
     background: linear-gradient(135deg, #e8eaf0, #b0bbc9);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.2s ease;
 }
@@ -1213,6 +1217,7 @@ body::after {
 .model-tab.active .tab-label {
     background: linear-gradient(135deg, #fff 0%, #fdba74 60%, #38bdf8 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 6px rgba(249,115,22,0.3));
 }
@@ -1257,6 +1262,7 @@ body::after {
     letter-spacing: 1px;
     background: linear-gradient(135deg, #f97316, #38bdf8);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 4px rgba(249,115,22,0.3));
     text-transform: uppercase;
