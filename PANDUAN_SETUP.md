@@ -1,38 +1,5 @@
-# Panduan Instalasi dan Setup Project (Dari Nol)
 
-Dokumen ini berisi panduan lengkap bagi pengguna baru yang ingin menyalin (clone) proyek ini dari GitHub dan menjalankannya di komputer lokal.
-
----
-
-## 🛠️ Prasyarat (Prerequisites)
-Sebelum memulai, pastikan komputer Anda telah terinstal perangkat lunak berikut:
-1. **Git**: Untuk melakukan kloning repositori ([Unduh Git](https://git-scm.com/)).
-2. **XAMPP**: Untuk menjalankan web server Apache (PHP) lokal ([Unduh XAMPP](https://www.apachefriends.org/)).
-3. **Python (Versi 3.8 s.d 3.12)**: Untuk menjalankan backend kecerdasan buatan ([Unduh Python](https://www.python.org/downloads/)).
-   > [!IMPORTANT]
-   > Pastikan Anda mencentang opsi **"Add Python to PATH"** saat melakukan instalasi Python.
-
----
-
-## 🚀 Langkah demi Langkah
-
-### Langkah 1: Kloning Repositori ke Folder XAMPP
-Agar program PHP dapat diakses langsung oleh server web lokal Apache, Anda harus mengkloning repositori ini ke dalam direktori `htdocs` dari XAMPP.
-
-1. Buka Terminal (Git Bash, Command Prompt, atau PowerShell).
-2. Pindah ke direktori `htdocs` XAMPP Anda:
-   ```bash
-   cd C:\xampp\htdocs
-   ```
-3. Lakukan kloning repositori dengan perintah berikut:
-   ```bash
-   git clone https://github.com/f4hmii/dasilsat.git hargamobil
-   ```
-   *Perintah di atas akan mendownload semua berkas proyek ke dalam folder baru bernama `hargamobil`.*
-
----
-
-### Langkah 2: Mempersiapkan Dataset Pendukung (PowerTransformer)
+### Langkah : Mempersiapkan Dataset Pendukung (PowerTransformer)
 Backend AI menggunakan modul `PowerTransformer` (Yeo-Johnson) untuk menormalkan data realtime. Model membutuhkan data pembanding dari dataset asli agar dapat di-fit di awal.
 
 1. Unduh dataset `used_cars.csv`.
