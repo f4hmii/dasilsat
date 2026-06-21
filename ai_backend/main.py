@@ -111,10 +111,13 @@ pt_nn_stats = {
 }
 
 # 1. Muat Scaler NN
-scaler_path = os.path.join(MODELS_DIR, "used_car_scaler_nn.sav")
+# Cari di BASE_DIR (ai_backend/) terlebih dahulu, fallback ke MODELS_DIR (ai_backend/models/)
+scaler_path_base  = os.path.join(BASE_DIR, "used_car_scaler_nn.sav")
+scaler_path_model = os.path.join(MODELS_DIR, "used_car_scaler_nn.sav")
+scaler_path = scaler_path_base if os.path.exists(scaler_path_base) else scaler_path_model
 try:
     loaded_scalers["NN"] = joblib.load(scaler_path)
-    print(f"[OK] Scaler NN berhasil dimuat dari models/used_car_scaler_nn.sav")
+    print(f"[OK] Scaler NN berhasil dimuat dari: {scaler_path}")
 except Exception as e:
     loaded_scalers["NN"] = None
     print(f"[WARN] Scaler NN tidak ditemukan atau gagal dimuat: {e}")
